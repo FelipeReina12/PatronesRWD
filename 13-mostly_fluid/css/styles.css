@@ -37,3 +37,21 @@ p {
 }
 
 /** CODIGO AQUI **/
+.contenedor {
+    max-width: 120rem;  /*para que se centre y no ocupe todo el ancho*/
+    width: 95%;  /*para que no llegue a las orillas en pantallas pequeñas*/
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+@media (min-width: 992px) {
+    .contenedor {
+        width: 60%;
+    }
+}
+img {
+    max-width: 100%;  /*max-width para que no se salga de su contenedor*/
+}
